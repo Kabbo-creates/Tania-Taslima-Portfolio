@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tania Taslima Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background: linear-gradient(to right, #f8f9fa, #e0e7ff);
+    }
+    .glass {
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(255, 255, 255, 0.4);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      transition: all 0.3s ease-in-out;
+    }
+    .glass:hover {
+      transform: scale(1.05);
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+    .header-block {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 1.5rem;
+      border-bottom: 2px solid #e0e7ff;
+    }
+    .header-text {
+      font-family: 'Roboto', sans-serif;
+      color: #1a202c;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      letter-spacing: 0.5px;
+    }
+    .sub-title {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: #4a5568;
+      margin-top: 0.5rem;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body class="text-gray-800 font-sans">
+
+  <!-- Header Section with separate block for Name and Title -->
+  <div class="header-block text-center md:text-left">
+    <div class="header-text text-4xl font-extrabold">Tania Taslima</div>
+    <div class="sub-title">Fashion Entrepreneur, Business Leader, Social Entrepreneur</div>
+  </div>
+
+  <div class="flex flex-col md:flex-row h-screen overflow-hidden">
+    <!-- Left Image Section -->
+    <div class="md:w-1/2 w-full h-1/2 md:h-full">
+      <img src="tania.jpg" alt="Tania Taslima" class="w-full h-full object-cover" />
+    </div>
+
+    <!-- Right Button Section -->
+    <div class="md:w-1/2 w-full h-full flex items-center justify-center p-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-2xl">
+        <a href="career.html" class="glass p-6 text-center text-xl font-semibold shadow-xl">Career Summary</a>
+        <a href="education.html" class="glass p-6 text-center text-xl font-semibold shadow-xl">Education</a>
+        <a href="awards.html" class="glass p-6 text-center text-xl font-semibold shadow-xl">Awards</a>
+        <a href="experience.html" class="glass p-6 text-center text-xl font-semibold shadow-xl">Experience</a>
+        <a href="media.html" class="glass p-6 text-center text-xl font-semibold shadow-xl">Media</a>
+        <a href="languages.html" class="glass p-6 text-center text-xl font-semibold shadow-xl">Languages</a>
+        <a href="projects.html" class="glass p-6 text-center text-xl font-semibold shadow-xl">Projects</a>
+        <a href="contact.html" class="glass p-6 text-center text-xl font-semibold shadow-xl">Contact</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
